@@ -7,7 +7,6 @@
   <artifactId>hotelapp</artifactId>
 
   <version>0.0.1-SNAPSHOT</version>
-  <url>http://maven.apache.org</url>
   
   <dependencies>
     <dependency>
@@ -59,7 +58,7 @@
                    <appName>spark-json</appName>
                    <processTypes>
                        <!-- Tell Heroku how to launch your application -->
-                       <web>java -jar target/hotelapp-0.0.1-SNAPSHOT-jar-with-dependencies.jar</web>
+                       <web>java -jar ./target/hotelapp-0.0.1-SNAPSHOT-jar-with-dependencies.jar</web>
                    </processTypes>
                </configuration>
            </plugin>
