@@ -45,7 +45,7 @@
                    </descriptorRefs>
                    <archive>
                        <manifest>
-                           <mainClass>com.hotel.yosiMain</mainClass>
+                           <mainClass>com.hotel.yosi.Main</mainClass>
                        </manifest>
                    </archive>
                </configuration>
@@ -59,7 +59,7 @@
                    <appName>spark-json</appName>
                    <processTypes>
                        <!-- Tell Heroku how to launch your application -->
-                       <web>java -jar ./target/hotelapp-0.0.1-SNAPSHOT-jar-with-dependencies.jar</web>
+                       <web>java -jar target/hotelapp-0.0.1-SNAPSHOT-jar-with-dependencies.jar</web>
                    </processTypes>
                </configuration>
            </plugin>
