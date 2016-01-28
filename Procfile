@@ -1,1 +1,1 @@
-web: java -jar ./target/hotelapp.jar
+web: java -jar target/hotelapp.jar
