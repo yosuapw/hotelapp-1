@@ -1,20 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <groupId>com.hotel.yosi</groupId>
   <artifactId>hotelapp</artifactId>
-  <packaging>war</packaging>
+
   <version>0.0.1-SNAPSHOT</version>
   <name>spark-json</name>
   <url>http://maven.apache.org</url>
   
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-core</artifactId>
@@ -61,7 +56,7 @@
                <version>0.4.4</version>
                <configuration>
                    <jdkVersion>1.8</jdkVersion>
-                   <appName>hotelapp-deni-bego</appName>
+                   <appName>spark-json</appName>
                    <processTypes>
                        <!-- Tell Heroku how to launch your application -->
                        <web>java -jar ./target/hotelapp.jar</web>
