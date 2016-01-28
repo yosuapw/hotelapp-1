@@ -60,7 +60,7 @@
                    <appName>spark-json</appName>
                    <processTypes>
                        <!-- Tell Heroku how to launch your application -->
-                       <web>java -jar target/hotelapp.jar</web>
+                       <web>java -jar ./target/hotelapp-0.0.1-SNAPSHOT-jar-with-dependencies.jar</web>
                    </processTypes>
                </configuration>
            </plugin>
