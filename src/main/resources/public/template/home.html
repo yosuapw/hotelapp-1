@@ -1,0 +1,47 @@
+<!-- container -->
+	<!-- banner Slider starts Here -->
+	<script src="js/responsiveslides.min.js"></script>
+	 <script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+		  // Slideshow 4
+		  $("#slider3").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: false,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+	
+		});
+	  </script>
+	<!--//End-slider-script -->
+	<div  id="top" class="callbacks_container">
+		<ul class="rslides" id="slider3">
+			<li>
+				<div class="head-info">
+					<h1> asdasdasdasdasd<span>faucibus eu semper ut, hendrerit</span></h1>
+					<p>Sollicitudin et elit sit amet, luctus placerat ipsum</p>
+				</div>
+			</li>
+			<li>
+				<div class="head-info">
+					<h1>asdasdasdasd<span>Suspendisse venenatis volutpat </span></h1>
+					<p>Morbi id felis porttitor tellus viverra pulvinar. Vestibulum </p>
+				</div>
+			</li>
+			<li>
+				<div class="head-info">
+					<h1>asdasdasd<span>Morbi id felis porttitor tellus</span></h1>
+					<p>Morbi id felis porttitor tellus viverra pulvinar.ante ipsum </p>
+				</div>
+			</li>
+		</ul>
+	</div>
+<!-- container -->

@@ -17,6 +17,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!-- js -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/modernizr.custom.js"></script>
+		<script src="js/angular.js"></script>
+		<script src="js/angular-ui-router.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<!-- js -->
@@ -38,8 +40,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</head>
 	
 	<body>
-		
-       <div data-ui-view></div>
 		<!-- header -->
 		<div class="header">
 			<div class="head-bg">
@@ -73,52 +73,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<!-- container -->
 			<div class="container">
-				<!-- banner Slider starts Here -->
-					<script src="js/responsiveslides.min.js"></script>
-					 <script>
-						// You can also use "$(window).load(function() {"
-						$(function () {
-						  // Slideshow 4
-						  $("#slider3").responsiveSlides({
-							auto: true,
-							pager: false,
-							nav: false,
-							speed: 500,
-							namespace: "callbacks",
-							before: function () {
-							  $('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-							  $('.events').append("<li>after event fired.</li>");
-							}
-						  });
-					
-						});
-					  </script>
-					<!--//End-slider-script -->
-					<div  id="top" class="callbacks_container">
-						<ul class="rslides" id="slider3">
-							<li>
-								<div class="head-info">
-									<h1> BEGO LOCH !!!<span>faucibus eu semper ut, hendrerit</span></h1>
-									<p>Sollicitudin et elit sit amet, luctus placerat ipsum</p>
-								</div>
-							</li>
-							<li>
-								<div class="head-info">
-									<h1>LEMAH LOCH !!<span>Suspendisse venenatis volutpat </span></h1>
-									<p>Morbi id felis porttitor tellus viverra pulvinar. Vestibulum </p>
-								</div>
-							</li>
-							<li>
-								<div class="head-info">
-									<h1>COPO LOCH !!!<span>Morbi id felis porttitor tellus</span></h1>
-									<p>Morbi id felis porttitor tellus viverra pulvinar.ante ipsum </p>
-								</div>
-							</li>
-						</ul>
-					</div>
-
+				<div data-ui-view></div>
 			</div>
 			<!-- container -->
 		</div>
