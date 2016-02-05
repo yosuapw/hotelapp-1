@@ -30,17 +30,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 		})
 		.state('about', {
 			url: '/about',
-			template: 'template/about.html',
+			templateUrl: 'template/about.html',
 			controller: 'AboutController'
 		})
 		.state('booking', {
 			url: '/booking',
-			template: 'template/booking.html',
+			templateUrl: 'template/booking.html',
 			controller: 'BookingController'
 		})
 		.state('news', {
 			url: '/',
-			template: 'template/news.html',
+			templateUrl: 'template/news.html',
 			controller: 'NewsController'
 		})
 		.state('mailUs', {

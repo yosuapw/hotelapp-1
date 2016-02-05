@@ -1,0 +1,107 @@
+
+	<div class="booking-info">
+		<h3>booking</h3>
+	</div>
+	<div class="booking-form">
+		<!---strat-date-piker---->
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<script src="js/jquery-ui.js"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker,#datepicker1" ).datepicker();
+						  });
+				  </script>
+		<!---/End-date-piker---->
+		<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+		<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+			})();
+		</script>
+		<div class="online_reservation">
+				<div class="b_room">
+					<div class="booking_room">
+						<div class="reservation">
+							<ul>		
+								<li  class="span1_of_1 left">
+									 <h5>From</h5>
+									 <div class="book_date">
+										 <form>
+											<input type="text" placeholder="Type Depature City" required="">
+										 </form>
+									 </div>					
+								 </li>
+								 <li  class="span1_of_1 left">
+									 <h5>To</h5>
+									 <div class="book_date">
+									 <form>
+										<input type="text" placeholder="Type Destination City" required="">
+									 </form>
+									 </div>		
+								 </li>
+								 <li  class="span1_of_1 left">
+									 <h5>Arrival</h5>
+									 <div class="book_date">
+										 <form>
+										 <input class="date" id="datepicker" type="text" value="2/08/2013" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '2/08/2013';}" required=>
+										 </form>
+									 </div>					
+								 </li>
+								 <li  class="span1_of_1 left">
+									 <h5>Depature</h5>
+									 <div class="book_date">
+									 <form>
+										<input class="date" id="datepicker1" type="text" value="22/08/2013" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '22/08/2013';}" required=>
+									 </form>
+									 </div>		
+								 </li>
+								 <li class="span1_of_1">
+									 <h5>Class</h5>
+									 <!----------start section_room----------->
+									 <div class="section_room">
+										  <select id="country" onchange="change_country(this.value)" class="frm-field required">
+												<option value="null">Economy</option>
+												<option value="null">Business</option>         
+												<option value="AX">First Class</option>
+												<option value="AX">Premium Economy</option>
+										  </select>
+									 </div>	
+								 </li>
+								 <li class="span1_of_3">
+										<div class="date_btn">
+											<form>
+												<input type="submit" value="Find Flight" />
+											</form>
+										</div>
+								 </li>
+								 <div class="clearfix"></div>
+							</ul>
+						 </div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+		</div>
+		<!---->
+	</div>
+	<div class="clearfix"></div>
+	<div class="booking-grids">
+		<h3>WE ARE PROVIDE</h3>
+		<div class="col-md-7 booking-grid-left">
+			<h4>QUISQUE LECTUS IPSUM, FERMENTUM EU SODALES NON, AUCTOR IN MAURIS. NULLA PRETIUM CURSUS NULLA, AC RUTRUM MAGNA LAOREET EU.</h4>
+			<p>Maecenas ultricies molestie efficitur. Maecenas bibendum tincidunt nulla at scelerisque. Fusce sodales nibh ex. Proin vel commodo neque. In congue neque ac venenatis aliquam. Sed vestibulum cursus velit faucibus tempor. Maecenas posuere pellentesque erat, vel auctor mauris fringilla ac. Proin euismod orci nec felis efficitur, a pulvinar nisl viverra. Etiam eu finibus ipsum, id molestie nunc</p>
+			<p>Maecenas ultricies molestie efficitur. Maecenas bibendum tincidunt nulla at scelerisque. Fusce sodales nibh ex. Proin vel commodo neque. In congue neque ac venenatis aliquam.Maecenas bibendum tincidunt nulla at scelerisque.</p>
+			<div class="read-more red">
+				<a href="#">Read More >></a>
+			</div>
+		</div>
+		<div class="col-md-5 booking-grid-right">
+			<img src="images/11.jpg" alt="">
+		</div>
+		<div class="clearfix"> </div>
+	</div>
