@@ -7,8 +7,8 @@ define(function(require) {
 
 	app.init = function() {	
 		angular.element(document).ready(function() {	
-		angular.bootstrap(document, ['myApp']);
-	});
+			angular.bootstrap(document, ['myApp']);
+		});
 	}
  	
 	app.controller('AboutController', ['$scope', function($scope) {

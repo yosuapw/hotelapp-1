@@ -12,7 +12,9 @@ require.config({
 		moveTop				: '../js/move-top',
 		ocLazyLoad			: '../js/ocLazyLoad',
 		responsiveSlides	: '../js/responsiveslides.min',
-		indexJs				: '../js/index'
+		indexJs				: '../js/index',
+		
+		dirTopDestination	: '/directive/top-destination'
 	},
 	shim: {
 		bootstrap			: {
