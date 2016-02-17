@@ -1,4 +1,9 @@
 require.config({
+    map: {
+        '*': {
+            'text': '../js/text'
+        }
+    },
 	paths: {
 		angular 			: '../js/angular',
 		angularUiRouter 	: '../js/angular-ui-router',
@@ -12,7 +17,13 @@ require.config({
 		moveTop				: '../js/move-top',
 		ocLazyLoad			: '../js/ocLazyLoad',
 		responsiveSlides	: '../js/responsiveslides.min',
-		indexJs				: '../js/index'
+		indexJs				: '../js/index',
+		
+		app					: './app',
+		topDestination		: './directive/top-destination/top-destination',
+		
+		
+		homeController		: './controller/home-controller'
 	},
 	shim: {
 		bootstrap			: {
