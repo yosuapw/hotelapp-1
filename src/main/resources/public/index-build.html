@@ -30,14 +30,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="head-logo">
 						<a href="index.html"><img src="images/logo1.png" alt="" /></a>
 					</div>
-					<div data-ui-view="navigation"></div>
+					<div class="top-nav">
+						<span class="menu"><img src="images/menu.png" alt=""></span>
+							<ul class="cl-effect-1">
+								<li><a data-ng-class="{ aktif: $state.includes('home') }" href="#/">HOME</a></li>                                             
+								<li><a data-ng-class="{ aktif: $state.includes('about') }" href="#/about">ABOUT</a></li>
+								<li><a data-ng-class="{ aktif: $state.includes('booking') }" href="#/booking">BOOKING</a></li> 
+								<li><a href="news.html">NEWS</a></li> 
+								<li><a href="mail.html">MAIL US</a></li>  
+							</ul>
+							<!-- script-for-menu -->
+						<!-- /script-for-menu -->
+					</div>
 					<div class="clearfix"> </div>
 				</div>
 				<!-- //container -->
 			</div>
 			<!-- container -->
 			<div class="container">
-				<div data-ui-view="body"></div>
+				<div data-ui-view></div>
 			</div>
 			<!-- container -->
 		</div>

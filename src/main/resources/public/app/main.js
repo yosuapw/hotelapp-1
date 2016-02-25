@@ -17,6 +17,7 @@ require.config({
 		moveTop				: '../js/move-top',
 		ocLazyLoad			: '../js/ocLazyLoad',
 		responsiveSlides	: '../js/responsiveslides.min',
+		responsiveSlidesHome :'../js/responsiveslides-home',
 		indexJs				: '../js/index',
 		
 		app					: './app',
@@ -51,6 +52,10 @@ require.config({
 		},
 		angular				: {
 			exports	: 'angular'
+		},
+		responsiveSlidesHome: {
+			deps	:['responsiveSlides'],
+			exports : 'responsiveSlides'
 		}
 	}
 });

@@ -82,6 +82,10 @@ ul a:focus {
 	transform: translateX(-20px);
 }
 
+.aktif {
+    border-bottom: 1px solid #ddd;
+}
+
 .cl-effect-1 a:hover::before,
 .cl-effect-1 a:hover::after,
 .cl-effect-1 a:focus::before,
